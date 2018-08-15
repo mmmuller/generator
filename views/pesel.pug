@@ -2,6 +2,6 @@ extends layout
 
 block content
   h1 Generator pesel
-  form(method='post', action='')
+  form(method='post', action='/pesel')
     input(value=pesel.generate())
     button(type='submit') Generuj pesel
