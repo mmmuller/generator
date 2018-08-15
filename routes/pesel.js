@@ -5,7 +5,7 @@ var generate = require("pesel");
 
 var body = {
     title: 'Generator pesel',
-    pesel: generate.generate
+    pesel: generate
 };
 
 /* GET home page. */
