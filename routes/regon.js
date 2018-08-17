@@ -3,17 +3,14 @@ var router = express.Router();
 var generate = require('../generators/regon');
 
 var body = {
-  title: 'Generator REGON',
-  generate: generate
+    title: 'Generator REGON',
+    generate: generate,
+    execute: 'generatory.generate(\'regon\')'
 };
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('generate', body);
-});
-
-router.post('/', function (req, res, next) {
-  res.render('generate', body);
+    res.render('generate', body);
 });
 
 module.exports = router;

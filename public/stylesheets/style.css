@@ -4,19 +4,23 @@ body {
 }
 
 a {
-    color: #00B7FF;
 }
 
 h1 {
     font-family: "Book Antiqua";
 }
 
-.ibanField {
-    width: 200px;
-}
-
 .logo {
     text-align: center;
     font-size: 50px;
     font-family: "Agency FB";
+}
+
+.content>ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.content>ul>li {
+    padding-top: 2px;
 }

@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1=title
+  a #{type}
   form(method='post')
-    input(value=generate())
-    button(type='submit') Generuj
+    input(value=generate(), id="result")
+    button(type='button', onclick=execute) Generuj
+
+  script(src="/javascripts/generate.js")

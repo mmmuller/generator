@@ -5,15 +5,12 @@ var generate = require("pesel");
 
 var body = {
     title: 'Generator PESEL',
-    generate: generate.generate
+    generate: generate.generate,
+    execute: 'generatory.generate(\'pesel\')'
 };
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('generate', body);
-});
-
-router.post('/', function (req, res, next) {
     res.render('generate', body);
 });
 

@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var apiRouter = require('./routes/api');
 var usersRouter = require('./routes/users');
 var peselRouter = require('./routes/pesel');
 var nipRouter = require('./routes/nip');
@@ -25,12 +26,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 app.use('/pesel', peselRouter);
 app.use('/nip', nipRouter);
 app.use('/regon', regonRouter);
 app.use('/iban', ibanRouter);
-app.use('/identityNumber', identityNumberRouter);
+app.use('/numer-dowodu-osobistego', identityNumberRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

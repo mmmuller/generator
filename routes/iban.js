@@ -4,15 +4,13 @@ var generate = require('../generators/iban');
 
 var body = {
   title: 'Generator IBAN',
-  generate: generate
+  generate: generate,
+  execute: 'generatory.generate(\'iban\')'
+
 };
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('generate', body);
-});
-
-router.post('/', function (req, res, next) {
   res.render('generate', body);
 });
 
