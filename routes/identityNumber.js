@@ -9,11 +9,11 @@ var body = {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('identityNumber', body);
+  res.render('generate', body);
 });
 
 router.post('/', function (req, res, next) {
-  res.render('identityNumber', body);
+  res.render('generate', body);
 });
 
 module.exports = router;
