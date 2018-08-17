@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Generator IBAN
+  form(method='post')
+    input(value=generate(), class="ibanField")
+    button(type='submit') Generuj iban

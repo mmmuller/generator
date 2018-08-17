@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Generator numer dowodu
+  form(method='post')
+    input(value=generate())
+    button(type='submit') Generuj numer dowodu

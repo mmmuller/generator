@@ -7,6 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var peselRouter = require('./routes/pesel');
+var nipRouter = require('./routes/nip');
+var regonRouter = require('./routes/regon');
+var ibanRouter = require('./routes/iban');
+var identityNumberRouter = require('./routes/identityNumber');
 
 var app = express();
 
@@ -23,6 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/pesel', peselRouter);
+app.use('/nip', nipRouter);
+app.use('/regon', regonRouter);
+app.use('/iban', ibanRouter);
+app.use('/identityNumber', identityNumberRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
