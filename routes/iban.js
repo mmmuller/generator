@@ -4,6 +4,7 @@ var generate = require('../generators/iban');
 
 var body = {
   title: 'Generator IBAN',
+  description: 'Automatyczny generator numeru IBAN',
   generate: generate,
   execute: 'generatory.generate(\'iban\')'
 

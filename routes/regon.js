@@ -4,6 +4,7 @@ var generate = require('../generators/regon');
 
 var body = {
     title: 'Generator REGON',
+    description: 'Automatyczny generator numeru REGON',
     generate: generate,
     execute: 'generatory.generate(\'regon\')'
 };

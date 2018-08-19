@@ -5,6 +5,7 @@ var generate = require("pesel");
 
 var body = {
     title: 'Generator PESEL',
+    description: 'Automatyczny generator numeru PESEL',
     generate: generate.generate,
     execute: 'generatory.generate(\'pesel\')'
 };

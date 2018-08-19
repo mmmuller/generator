@@ -4,6 +4,7 @@ var generate = require('../generators/identityNumber');
 
 var body = {
     title: 'Generator numer dowodu',
+    description: 'Automatyczny generator numeru dowodu osobistego',
     generate: generate,
     execute: 'generatory.generate(\'identityNumber\')'
 };
